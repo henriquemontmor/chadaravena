@@ -21,8 +21,9 @@ body {
 
 /* Header/Hero Section */
 .hero {
-    background: linear-gradient(135deg, #ff69b4 0%, #ff1493 50%, #dc143c 100%);
-    color: white;
+    /* background: linear-gradient(135deg, #ff69b4 0%, #ff1493 50%, #dc143c 100%); */
+    background: url('./images/main.jpeg') no-repeat center center/cover;
+    color: rgb(25, 1, 27);
     text-align: center;
     padding: 80px 20px;
     position: relative;
@@ -31,6 +32,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6); /* Overlay branco semi-transparente mais intenso */
+    z-index: 1;
 }
 
 .hero-content {
@@ -58,7 +70,7 @@ body {
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 20px;
-    color: #ffe4e1;
+    color: rgb(25, 1, 27);
 }
 
 .event-date {
