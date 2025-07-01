@@ -22,7 +22,7 @@ body {
 /* Header/Hero Section */
 .hero {
     /* background: linear-gradient(135deg, #ff69b4 0%, #ff1493 50%, #dc143c 100%); */
-    background: url('./images/main.jpeg') no-repeat center center/cover;
+    background: url('/images/main.jpeg') no-repeat center center/cover;
     color: rgb(25, 1, 27);
     text-align: center;
     padding: 80px 20px;
